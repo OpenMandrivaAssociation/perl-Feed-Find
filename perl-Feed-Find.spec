@@ -1,6 +1,6 @@
 %define	module	Feed-Find
 %define	name	perl-%{module}
-%define	release	%mkrel 3
+%define	release	%mkrel 5
 %define	version	0.06
 
 Name:		%{name}
