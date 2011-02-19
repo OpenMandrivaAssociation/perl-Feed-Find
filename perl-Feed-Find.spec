@@ -11,9 +11,12 @@ License:	GPL or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}/
 Source0:	http://www.cpan.org/modules/by-module/XML/%{module}-%{version}.tar.bz2
-BuildRequires:	perl-Class-ErrorHandler perl-HTML-Parser perl-URI perl-libwww-perl
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	perl(Class::ErrorHandler)
+BuildRequires:	perl(HTML::Parser)
+BuildRequires:	perl(URI)
+BuildRequires:	perl(LWP)
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Perl Module for Syndication feed auto-discovery.
@@ -37,7 +40,8 @@ SKIP_SAX_INSTALL=1 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
-%{__make} test
+# requires network access
+#%{__make} test
 
 %clean 
 rm -rf %{buildroot}
