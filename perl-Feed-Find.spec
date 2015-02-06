@@ -2,7 +2,7 @@
 
 Name:		perl-%{module}
 Version:	0.07
-Release:	3
+Release:	4
 Summary:	Perl Module for Syndication feed auto-discovery
 License:	GPL or Artistic
 Group:		Development/Perl
