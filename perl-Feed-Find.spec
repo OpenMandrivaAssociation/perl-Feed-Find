@@ -9,6 +9,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{module}/
 Source0:	http://www.cpan.org/modules/by-module/XML/%{module}-%{version}.tar.bz2
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Class::ErrorHandler)
 BuildRequires:	perl(HTML::Parser)
