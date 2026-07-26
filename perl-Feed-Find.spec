@@ -1,13 +1,13 @@
 %define	module	Feed-Find
 
 Name:		perl-%{module}
-Version:	0.07
-Release:	4
+Version:	0.13
+Release:	1
 Summary:	Perl Module for Syndication feed auto-discovery
 License:	GPL or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{module}/
-Source0:	http://www.cpan.org/modules/by-module/XML/%{module}-%{version}.tar.bz2
+Url:		https://github.com/davorg/Feed-Find
+Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAVECROSS/%{module}-%{version}.tar.bz2
 
 BuildRequires:	make
 BuildRequires:	perl-devel
